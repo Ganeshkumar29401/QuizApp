@@ -4,6 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="./assets/styles.css" />
     <title>QuizApp</title>
     <script src="./assets/app.js" defer></script>
@@ -14,12 +20,16 @@
         <div class="wrapper">
           <div class="input_field">
             <input type="text" class="playerName" autocomplete="off" />
-            <span class="focus-border"></span>
+            <span class="focus_border"></span>
           </div>
           <button class="enableInput">Start Quiz</button>
         </div>
       </div>
     </section>
+    <div class="alert">
+      <span>Please enter your name to continue</span>
+      <span id="cancel_icon"><i class="fas fa-times"></i></span>
+    </div>
     <section id="card">
       <div class="quizCardWrapper">
         <div class="cardData">
@@ -27,11 +37,17 @@
             <h1>Welcome, Ganeshkumar M</h1>
             <div><span id="timer">00:00</span></div>
           </div>
-          <div class="options">
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Unde qui
-            quam quibusdam reiciendis molestiae, praesentium vitae. Aut,
-            voluptates corporis blanditiis fuga deserunt eos sunt dicta
-            dignissimos tempore, rerum itaque veritatis.
+          <div class="card_body">
+            <div class="question">Q1.Tell me your First name..?</div>
+            <ul class="options">
+              <li class="opt1">helloejiaonjnjcal</li>
+              <li class="opt2">hi</li>
+              <li class="opt3">hello</li>
+              <li class="opt4">hi</li>
+            </ul>
+            <div class="nextBtn">
+              <button type="button" class="next">Next</button>
+            </div>
           </div>
         </div>
       </div>
