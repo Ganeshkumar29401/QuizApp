@@ -106,7 +106,7 @@ body {
   position: absolute;
   display: flex;
   justify-content: space-between;
-  top: -50px;
+  top: -150px;
   right: 10px;
   width: min(20rem, 90%);
   background-color: #EA2027;
