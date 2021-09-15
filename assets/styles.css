@@ -175,9 +175,9 @@ body {
 
 ul{
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
-  grid-gap: 10px;
+  grid-template-columns: repeat(auto-fit, 200px);
+  justify-content: center;
+  grid-gap: 1rem;
 }
 
 li{
