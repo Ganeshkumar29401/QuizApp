@@ -10,9 +10,9 @@
       integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./assets/styles.css" />
+    <link rel="stylesheet" href="./assets/Style/styles.css" />
     <title>QuizApp</title>
-    <script src="./assets/app.js" defer></script>
+    <script src="./assets/js/app.js" defer type="module"></script>
   </head>
   <body>
     <section id="getName">
@@ -34,16 +34,16 @@
       <div class="quizCardWrapper">
         <div class="cardData">
           <div class="header">
-            <h1>Welcome, Ganeshkumar M</h1>
+            <h2 id="setUserName"></h2>
             <div><span id="timer">00:00</span></div>
           </div>
           <div class="card_body">
             <div class="question">Q1.Tell me your First name..?</div>
             <ul class="options">
-              <li class="opt1">helloejiaonjnjcal</li>
-              <li class="opt2">hi</li>
-              <li class="opt3">hello</li>
-              <li class="opt4">hi</li>
+              <li class="opt1" tabindex="0">Prompts to complete the statement</li>
+              <li class="opt2" tabindex="0">hi</li>
+              <li class="opt3" tabindex="0">hello</li>
+              <li class="opt4" tabindex="0">hi</li>
             </ul>
             <div class="nextBtn">
               <button type="button" class="next">Next</button>
