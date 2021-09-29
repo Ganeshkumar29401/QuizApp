@@ -1,5 +1,6 @@
 const data = [
   {
+    id : 1,
     question: "Q1. Which type of JavaScript language is ?",
     ans: "Object-Based",
     options: [
@@ -10,6 +11,7 @@ const data = [
     ],
   },
   {
+    id:2,
     question:
       "Q2. Which one of the following also known as Conditional Expression: ?",
     ans: "immediate if",
@@ -21,6 +23,7 @@ const data = [
     ],
   },
   {
+    id:3,
     question:
       "Q3. When interpreter encounters an empty statements, what it will do: ?",
     ans: "Ignores the statements",
@@ -32,11 +35,13 @@ const data = [
     ],
   },
   {
+    id:4,
     question: "Q4. The 'function' and 'var' are known as: ?",
     ans: "Declaration statements",
     options: ["Keywords", "Data types", "Declaration statements", "Prototypes"],
   },
   {
+    id:5,
     question: "Q5 Which of the following type of a variable is volatile ?",
     ans: "Mutable variable",
     options: [
