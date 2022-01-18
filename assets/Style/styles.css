@@ -225,6 +225,24 @@ li.active{
   border-color: #0579b8;
 }
 
+.resultPage{
+  display: none;
+  text-align: center;
+  margin: 4rem 0;
+}
+
+
+img{
+  width: 100%;
+  max-width: min(400px, 50%);
+}
+.resultPoint{
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 30px 0;
+}
+
 @media (max-width:375px) {
   ul{
     grid-template-columns: repeat(auto-fit, 220px);

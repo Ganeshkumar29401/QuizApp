@@ -8,14 +8,13 @@ const cancelAlertDropdownBtn = document.getElementById("cancel_icon");
 const userInputField = document.querySelector(".playerName");
 const cardHeader = document.getElementById("setUserName");
 const nextBtn = document.querySelector(".next");
+const rootQuesBodyCard = document.getElementById("card");
 const rootQuesBody = document.querySelector(".quesWrapper");
 const currentQuestion = document.getElementById("questionCount");
 const progressBar = document.querySelector(".progress");
-let questionCount = 0,
-  quizPoint = 0;
+let questionCount = 0,quizPoint = 0;
 let unansweredQues = [...data];
 console.log(unansweredQues);
-let answeredOptions = [];
 let timer;
 
 const addToggleAlert = () => {
@@ -110,6 +109,9 @@ const nextQuestion = () => {
   questionCount++;
   if (questionCount > unansweredQues.length - 1) {
     timerHandler("stop");
+    rootQuesBodyCard.style.display = "none";
+    document.querySelector(".resultPoint").textContent = `Well Done ${localStorage.getItem("name")} \n ${quizPoint} out of 50`
+    document.querySelector(".resultPage").style.display = "block";
     console.log("dafa");
     return;
   }
